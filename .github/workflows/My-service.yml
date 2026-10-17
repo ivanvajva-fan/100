@@ -1,0 +1,12 @@
+# Это комментарий
+service:
+  name: my-service
+  version: 1.0.0
+  ports:
+    - "80:8080"
+    - "443:8443"
+  environment:
+    - ENV=production
+  resources:
+    - type: pod
+      size: "SVC"
